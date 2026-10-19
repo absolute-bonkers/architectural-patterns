@@ -56,3 +56,9 @@ flowchart TB
 These are teaching examples, not production infrastructure. In-memory adapters
 stand in for databases, brokers, remote services, and cloud runtimes where
 those dependencies would distract from the architectural idea.
+
+Further reading: Martin Fowler's [CQRS](https://martinfowler.com/bliki/CQRS.html)
+and [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html)
+overviews discuss the trade-offs behind two of the state/communication
+patterns; [micro-frontends.org](https://micro-frontends.org/) describes the
+independent-team and feature-composition motivation for frontend boundaries.

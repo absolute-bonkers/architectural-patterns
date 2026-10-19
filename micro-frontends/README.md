@@ -20,6 +20,9 @@ flowchart LR
 large frontend areas. **Trade-off:** integration contracts, shared dependencies,
 consistent UX, performance, and accessibility become harder to coordinate.
 Avoid splitting a small frontend without a real organizational or delivery need.
+The shell also rejects duplicate or blank routes so routing does not silently
+select an arbitrary module. The [micro-frontends.org introduction](https://micro-frontends.org/)
+describes the multiple-team, independent-delivery motivation.
 
 Examples: [`FrontendShell.java`](src/main/java/com/absolutebonkers/architecture/microfrontends/FrontendShell.java),
 [`FrontendModule.java`](src/main/java/com/absolutebonkers/architecture/microfrontends/FrontendModule.java),

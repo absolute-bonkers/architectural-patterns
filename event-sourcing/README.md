@@ -19,6 +19,10 @@ valuable domain requirements. **Trade-off:** event schemas, replay cost,
 concurrency, snapshots, and compensating actions require careful design.
 Event sourcing is not simply logging every method call.
 
+See Martin Fowler's [Event Sourcing overview](https://martinfowler.com/eaaDev/EventSourcing.html)
+for the event-stream and replay concepts; this example keeps the stream in
+memory and validates events before appending them.
+
 Example: [`BankAccount.java`](src/main/java/com/absolutebonkers/architecture/eventsourcing/BankAccount.java) ·
 Test: [`BankAccountTest.java`](src/test/java/com/absolutebonkers/architecture/eventsourcing/BankAccountTest.java).
 

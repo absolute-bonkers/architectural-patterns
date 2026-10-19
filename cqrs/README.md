@@ -17,6 +17,10 @@ flowchart LR
 needs. **Trade-off:** projections must stay synchronized; separate stores can
 introduce lag and operational complexity. CQRS does not require event sourcing.
 
+Martin Fowler's [CQRS overview](https://martinfowler.com/bliki/CQRS.html)
+emphasizes that separate models can add risky complexity and are worthwhile
+only when the problem benefits from them.
+
 Example: [`TaskBoard.java`](src/main/java/com/absolutebonkers/architecture/cqrs/TaskBoard.java) ·
 Test: [`TaskBoardTest.java`](src/test/java/com/absolutebonkers/architecture/cqrs/TaskBoardTest.java).
 
