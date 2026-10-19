@@ -1,0 +1,13 @@
+rootProject.name = 'architectural-patterns'
+
+include 'monolithic'
+include 'microservices'
+include 'soa'
+include 'event-driven'
+include 'hexagonal'
+include 'clean-architecture'
+include 'layered'
+include 'cqrs'
+include 'event-sourcing'
+include 'serverless'
+include 'micro-frontends'
