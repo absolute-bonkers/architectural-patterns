@@ -14,6 +14,31 @@ repository root:
 ./gradlew :hexagonal:test
 ```
 
+## Choose a lens
+
+These patterns describe different architectural concerns and can be combined;
+the groups below are a learning aid, not mutually exclusive choices.
+
+```mermaid
+flowchart TB
+    A["Architecture decisions"]
+    A --> D["Deployment and ownership boundaries"]
+    D --> Mono["Monolith"]
+    D --> Services["Microservices and SOA"]
+    D --> Functions["Serverless"]
+    D --> Frontends["Micro-frontends"]
+
+    A --> I["Internal code organization"]
+    I --> Layers["Layered"]
+    I --> Ports["Hexagonal"]
+    I --> Clean["Clean Architecture"]
+
+    A --> C["Communication and state"]
+    C --> Events["Event-driven"]
+    C --> Commands["CQRS"]
+    C --> History["Event sourcing"]
+```
+
 | Architecture | Module | The quick idea |
 | --- | --- | --- |
 | Monolithic | [monolithic](monolithic/README.md) | One deployable application owns and coordinates the whole workflow. |
